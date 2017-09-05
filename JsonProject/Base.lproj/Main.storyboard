@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JsonProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="storm.png" translatesAutoresizingMaskIntoConstraints="NO" id="7TH-Zg-tbw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="432"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="click on the button below for the weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdI-lD-Q4p">
+                                <rect key="frame" x="16" y="431" width="343" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter city name here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EEU-Zo-U6p">
+                                <rect key="frame" x="16" y="471" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEO-kn-ncv">
+                                <rect key="frame" x="164" y="509" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="GQj-qj-wHy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6t4-dF-jrB">
+                                <rect key="frame" x="16" y="547" width="343" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CdI-lD-Q4p" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4AU-pB-oFr"/>
+                            <constraint firstAttribute="trailing" secondItem="7TH-Zg-tbw" secondAttribute="trailing" id="7RI-6D-to5"/>
+                            <constraint firstItem="EEU-Zo-U6p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="AqY-Kn-Jbo"/>
+                            <constraint firstItem="EEU-Zo-U6p" firstAttribute="top" secondItem="CdI-lD-Q4p" secondAttribute="bottom" constant="8" id="Ba1-I0-QlY"/>
+                            <constraint firstItem="6t4-dF-jrB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="BaT-J8-dRW"/>
+                            <constraint firstItem="6t4-dF-jrB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OqQ-9U-G9b"/>
+                            <constraint firstItem="fEO-kn-ncv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="148" id="Q2T-0d-qXa"/>
+                            <constraint firstItem="7TH-Zg-tbw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Reg-jo-T7a"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EEU-Zo-U6p" secondAttribute="bottom" constant="166" id="Rfs-cf-pPt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7TH-Zg-tbw" secondAttribute="bottom" constant="235" id="Ucy-oZ-ORu"/>
+                            <constraint firstItem="fEO-kn-ncv" firstAttribute="top" secondItem="EEU-Zo-U6p" secondAttribute="bottom" constant="8" id="XQR-3r-UcD"/>
+                            <constraint firstItem="7TH-Zg-tbw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZbE-X7-lUT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fEO-kn-ncv" secondAttribute="trailing" constant="149" id="aPF-GT-qv3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6t4-dF-jrB" secondAttribute="bottom" constant="79" id="efp-zn-UU3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CdI-lD-Q4p" secondAttribute="bottom" constant="204" id="gwM-hn-qNE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fEO-kn-ncv" secondAttribute="bottom" constant="128" id="ibf-PN-Tog"/>
+                            <constraint firstItem="6t4-dF-jrB" firstAttribute="top" secondItem="fEO-kn-ncv" secondAttribute="bottom" constant="8" id="nAz-lC-TBe"/>
+                            <constraint firstItem="CdI-lD-Q4p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="owZ-aH-cqH"/>
+                            <constraint firstItem="CdI-lD-Q4p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="411" id="tAw-v9-GDQ"/>
+                            <constraint firstItem="EEU-Zo-U6p" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vOS-O5-eeU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="6t4-dF-jrB" id="I1J-lM-6Ql"/>
+                        <outlet property="textfield" destination="EEU-Zo-U6p" id="W02-Ap-DbL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="storm.png" width="2000" height="2000"/>
+    </resources>
+</document>
